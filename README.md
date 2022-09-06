@@ -23,16 +23,6 @@ Once registered, follow the [instructions here](https://myapi.fyers.in/docs/#tag
 ### Configuration
 Open **config.json** in a text editor.
 
-**_Port_** defaults to _5010_. If you used a different port number update it here.
-
-**_server_timeout_** defaults to 120 seconds. By default, the redirect server will wait for 2 mins (120 seconds) for login/authorization before closing the server.
-
-**_credentials_path_** if left blank, looks for 'credentials.json' in the currently installed folder.
-
-> **Warning:** _credentials.json_ stores the app id, secret id, and other confidential details. Do not share this file or upload it online.
-
-> For added security, move the 'credentials.json' file to your home holder or .config. Update the **_credentials_path_** with the full path.
-
 ```json
 {
    "server_timeout": 120,
@@ -44,6 +34,17 @@ Open **config.json** in a text editor.
 }
 ```
 
+**_Port_** defaults to _5010_. If you used a different port number update it here.
+
+**_server_timeout_** defaults to 120 seconds. By default, the redirect server will wait for 2 mins (120 seconds) for login/authorization before closing the server.
+
+**_credentials_path_** if left blank, looks for 'credentials.json' in the currently installed folder.
+
+> **Warning:** _credentials.json_ stores the app id, secret id, and other confidential details. Do not share this file or upload it online.
+
+> For added security, move the 'credentials.json' file to your home holder or .config. Update the **_credentials_path_** with the full path.
+
+---
 Open **credentials.json** in a text editor and add your app id and secret. Leave all other fields blank. They are auto-updated by **auth.py**
 ```json
 {
