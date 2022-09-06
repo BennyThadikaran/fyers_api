@@ -1,0 +1,8 @@
+{
+   "server_timeout": 120,
+   "port": 5010,
+   "credentials_path": "",
+   "type": "code",
+   "grant": "authorization_code",
+   "hostname": "localhost"
+}
